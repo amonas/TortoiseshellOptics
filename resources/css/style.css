@@ -47,6 +47,10 @@ nav {
   display: inline-block;
 }
 
+.small {
+  display: none;
+}
+
 .top-bar li {
   display: inline-block;
   margin: 0 1rem;
@@ -148,4 +152,105 @@ footer img, p {
 footer img {
   height: 1.5rem;
   padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1000px){
+
+header {
+  height: 22rem;
+  padding-top: unset;
+  background-position: 20%;
+}
+
+.main-section, .header-container, footer {
+  width: 100%;
+  }
+
+.slogan {
+  margin-top: 5rem;
+  padding: 0.75rem 4rem;
+  margin-right: 2rem;
+}
+
+.slogan h1 {
+    font-size: 1.33rem;
+}
+
+}
+
+@media only screen and (max-width: 650px){
+
+body {
+  font-size: 0.77rem;
+}
+
+header {
+  height: 17rem;
+}
+
+.slogan {
+  margin-top: 9rem;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.slogan h1 {
+    font-size: 1rem;
+}
+
+.large {
+  display: none;
+}
+
+.small {
+  display: inherit;
+}
+
+.icons {
+  flex-direction: column;
+    align-items: center;
+    padding: 3.77rem 0;
+}
+
+.icon {
+  padding-bottom: 1.54rem;
+    justify-content: space-around;
+}
+
+.icon:last-child{
+  padding-bottom: unset;
+
+}
+
+.text-container {
+  display: block;
+
+}
+
+.side {
+
+width: unset;
+margin: unset;
+padding-bottom: 3rem;
+}
+
+.side p:first-child{
+  width: 100%;
+  text-align: center;
+}
+
+.side p:last-child{
+  padding: 1rem 0;
+
+}
+
+.footer-container img{
+  margin: 0 auto;
+}
+
+.footer-container p {
+  display: none;
+}
+
 }
